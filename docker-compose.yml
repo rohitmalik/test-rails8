@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    environment:
+      SECRET_KEY_BASE: "0b34e0c8502aa8fd8fb410854847eeefece22c828479dcb4943ecd82885bbd832fc27e6db1cfff9bc9af45f510f6c8821fecec8c16d1b36f219358d99af401f8"
